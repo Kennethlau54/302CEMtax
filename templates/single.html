@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title> Tax Assessment</title>
+</head>
+<Body>
+
+    <div class="">
+        <h2>Salaries Tax Computation (Single)</h2>
+        <li><a href= "{{ url_for('single')}}" target="blank" >Single</a></li>
+        <li><a href= "{{ url_for('married')}}" target="blank" >Married</a></li>
+        <form action="/single" method="POST">
+        <div class="section1">
+            <span>Enter Self income</span>
+            <input type="text" name="selfincome"
+            autocomplete="off" placeholder="$HK">
+        </div>
+        <div class="submit">
+                <input type="submit" name="submit"
+                value="Start Calculation">
+                <input type="reset" value="Clear">
+        </div>
+        </form>
+    </div>
+    
+</Body>
+</html>
